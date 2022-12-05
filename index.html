@@ -282,6 +282,10 @@
 
         var isPlaying = false;
 
+        window.onload = () => {
+            alert('Để có trải nghiệm tốt nhất bạn hãy bật nhạc ở nút dưới cùng bên trái và vuốt xuống thật chậm')
+        }
+
         function togglePlay() {
             if(isPlaying) { 
                 const play = document.createElement('span');
