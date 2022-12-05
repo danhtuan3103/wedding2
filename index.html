@@ -58,8 +58,8 @@
             <div class="invitation_text">
                 <p class="invitation_text_header">Trân trọng kính mời bạn đến dự buổi tiệc vủa chúng tôi</p>
                 <h2 class="invitation_text_t">Wedding</h2>
-                <p class="invitation_text_address">Chợ Bù Oai Đường 10, Bù đăng ,Bình Phước </p>
-                <P class="invitation_text_time">Vào lúc 11:00 ngày 14 tháng 12 năm 2022 (dương lịch)</P>
+                <p class="invitation_text_address">Xã Dakngo , huyện Tuy Đức tỉnh Daknong</p>
+                <P class="invitation_text_time">Vào lúc 11:00 ngày 13 tháng 12 năm 2022 (dương lịch)</P>
                 <p class="invitation_text_footer">Sự hiện diện của bạn là niềm vinh dự của chúng tôi !</p>
                 <p class="invitation_text_thank">Thank you</p>
             </div>
@@ -269,13 +269,6 @@
                 mail
                 </span>
         </a>
-
-        <div class="intro">
-            <span class="material-symbols-outlined">
-                arrow_downward
-                </span>
-            <p>Bật nhạc tại đây</p>
-        </div>
       
     </div>  
     
@@ -308,14 +301,6 @@
                 audio.play();
             }
         };
-
-        const myTimeOut = () => {
-            intro.style.display = 'none';
-        }
-        window.onload = () => {
-            setTimeout(myTimeOut, 7000);
-            clearTimeout(myTimeOut);
-        }
 
         audio.onplaying = function() {
             isPlaying = true;

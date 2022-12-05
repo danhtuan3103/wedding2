@@ -537,25 +537,6 @@
 }
 
 
-.intro {
-    background-color: #333;
-    color: #dd87fc;
-    border-radius: 4px;
-    width: 200px;
-    height:50px;
-    position: fixed;
-    bottom: 80px;
-    left: 12px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-
-
-
-
 @media (max-width: 480px) {
     .img {
         width: 100%;
