@@ -269,6 +269,15 @@
                 mail
                 </span>
         </a>
+
+        <div class="intro">
+            <span class="material-symbols-outlined">
+                arrow_downward
+                </span>
+            <p>Bật nhạc tại đây</p>
+        </div>
+      
+    </div>  
     
     </div>  
     <script>
@@ -277,20 +286,6 @@
     
         var audio = document.querySelector('audio');
         var btn = document.querySelector('.play-btn');
-        
-        window.onload = () => {
-            const isOpenMusic = confirm('Bạn có muốn bật nhạc không ?')
-            if(isOpenMusic) {
-                const pause = document.createElement('span');
-                pause.classList.add('material-symbols-outlined', 'pause-icon');
-                pause.innerHTML = 'pause';
-                btn.querySelector('.play-icon').remove();
-                btn.appendChild(pause);
-                audio.play();
-            }else {
-                return;
-            }
-        }
 
         var isPlaying = false;
 
@@ -313,6 +308,14 @@
                 audio.play();
             }
         };
+
+        const myTimeOut = () => {
+            intro.style.display = 'none';
+        }
+        window.onload = () => {
+            setTimeout(myTimeOut, 7000);
+            clearTimeout(myTimeOut);
+        }
 
         audio.onplaying = function() {
             isPlaying = true;
