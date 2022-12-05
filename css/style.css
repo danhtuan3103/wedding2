@@ -1,0 +1,570 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+  @font-face {
+    font-family:Hugh ;
+    src: url('../asset/font/hugh-is-life-font/HughIsLifePersonalUseItalic-K7axe.ttf');
+  }
+
+  @font-face {
+    font-family:Domain ;
+    src: url('../asset/font/TUV-Domaine-Regular.ttf');
+  }
+
+ 
+
+
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+
+.container { 
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+
+    
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebd2f5;
+
+
+}
+
+
+.text {
+    /* bottom: 180px; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Hugh;
+}
+
+.name {
+    color: #dd87fc;
+    text-shadow: 0px 1px 1px black; 
+    font-size: 4rem;
+    font-weight: 400;
+
+}
+
+
+.and {
+    font-size: 3rem;
+
+}
+
+
+.img-block {
+    margin-top: 32px;
+    max-width: 500px;
+    height: 100%;
+    filter: grayscale(1);
+}
+
+.img {
+    border-top-left-radius:  250px;;
+    border-top-right-radius: 250px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.audio {
+    visibility: hidden;
+    position: absolute;
+}
+
+.play-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #dd87fc;
+    border: none;
+    border-radius: 16px;
+    position: fixed;
+    bottom: 12px;
+    left: 12px;
+    cursor: pointer;
+
+}
+
+
+.play-btn:hover, .pause-btn:hover {
+    background-color: #ebd2f5;
+}
+
+.play-btn.play-icon, .play-btn.pause-icon {
+    font-size: 3rem;
+}
+
+
+/* mail btn */
+.mail-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 9999px;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #333;
+}
+
+.mail-btn:hover {
+    background-color: #333;
+}
+
+.mail-icon {
+    color: #dd87fc
+}
+
+.circle{
+    width:5px;
+    height:5px;
+    background:cyan;
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    overflow:hidden;
+    margin:auto;
+    animation: circle 6s linear infinite;
+  }
+  
+  @keyframes circle{
+    0%{
+      transform:rotate(0deg)
+                translate(-25px)
+                rotate(0deg);
+    
+    }
+    100%{
+      transform:rotate(360deg)
+                translate(-25px)
+                rotate(-360deg);
+    }
+  }
+  
+  
+
+
+/* Invitation */
+
+.invitation {
+    padding: 100px 8px;
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #333;
+    border-bottom: 1px solid #333;
+
+}
+.invitation_header {
+    letter-spacing:4px;
+    font-size: 2rem;
+
+}
+.invitation_letter {
+    margin-top: 24px;;
+    font-size: 4rem;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    line-height: 1;
+}
+
+.invitation_t {
+    margin-top: 24px;
+
+}
+.invitation_t, .invitation_o {
+    margin-bottom: 0;
+}
+.invitation_line {
+    width: 2px;
+    height: 230px;
+    margin: 0 24px;
+    background-color: #333;
+}
+
+.invitation_name {
+    margin-top: 24px;
+    display: flex;
+}
+
+.invitation_name_t {
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: Domain;
+}
+
+.invitation_name_and {
+    margin: 12px 24px;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: Hugh;
+}
+
+.invitation_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: Domain;
+    text-align: center;
+
+}
+
+
+.invitation_text_t {
+    margin: 12px 0;
+    font-family: Hugh;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.invitation_text_address,.invitation_text_time {
+    font-size: 1.1rem;
+    /* color: red; */
+    font-family: Domain;
+}
+
+.invitation_text_footer {
+    margin-top: 24px;
+}
+
+.invitation_text_thank {
+    margin-top: 24px;
+    font-family: Hugh;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+/* Profile */
+
+.profile {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #ebd2f5;
+}
+
+
+.profile_content {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profile_block {
+    margin: 24px;
+    
+    padding-bottom: 24px;
+    border-bottom: 1px solid #333;
+}
+
+.profile_img {
+    max-width: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.profile_text {
+    max-width:500px;
+    padding: 12px;
+    text-align: start;
+
+}
+
+.profile_text_title {
+    letter-spacing:12px;
+    font-size: 1.6rem;;
+    font-weight: 100;
+
+}
+
+.profile_text_name {
+    margin-top: 24px;
+    font-size: 2rem;
+    font-family: Domain;
+}
+
+.profile_text_content {
+    margin-top: 8px;
+    font-family: Domain;
+
+}
+
+
+
+
+  
+  
+
+/* Story */
+
+.story {
+    margin-left: 24px;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.story_title {
+    margin-top: 32px;
+    font-size: 4rem;
+    font-family: Hugh;
+    font-weight: 100;
+
+}
+.story_content {
+    margin: 32px 32px;
+    border-left: 1px solid #333;
+}
+
+
+.story_content_content {
+    margin-bottom: 46px;
+    padding: 12px 24px;
+    display: flex;
+    flex-direction:column;
+    position: relative;
+    
+}
+
+.story_content_circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: -8px;
+
+
+}
+
+
+.story_content_title {
+    font-size: 2rem;
+    font-family: Domain;
+}
+
+.story_content_date {
+    font-family: Domain;
+    font-size: 1rem;
+    margin: 12px 0;
+}
+
+.story_content_text {
+    font-family: Domain;
+    max-width: 400px;
+    margin: 12px 0;
+}
+
+.story_content_img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 4px solid #333;
+}
+
+/* Album */
+
+.album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #ebd2f5;
+
+}
+
+.album2 {
+    background-color: #333;
+}
+
+.album_content {
+    margin-top: 24px;
+    text-align: center;
+    min-height:100vh;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+}
+.album_img {
+    margin: 24px;
+    max-width: 500px;
+    width: 90%;
+    border: 8px solid white;
+}
+
+.album_text {
+    padding: 24px 0;
+    font-size: 1.6rem;
+    font-family: Hugh;
+}
+
+.album2 .album_text {
+    color: white;
+}
+
+/*  Form */
+
+.message {
+    width: 100%;
+    display: flex;
+    padding-bottom: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 90%;
+
+}
+
+.label {
+    margin-top: 24px;
+    margin-bottom: 4px;
+    font-size: 1.2rem;
+    font-family: Domain;
+
+}
+
+.input {
+    height:40px;
+    padding: 12px;
+    outline: none;
+
+}
+
+.input:focus {
+    background-color: #ebd2f5;
+    border:1px solid #dd87fc ;
+
+}
+
+.textarea { 
+    height:120px;
+    padding: 12px;
+    resize: none;
+    outline: none;
+}
+
+.textarea:focus {
+    background-color: #ebd2f5;
+    border:1px solid #dd87fc ;
+
+}
+
+.send-btn {
+    margin-top: 24px;
+    height: 40px;
+    background-color:#dd87fc;
+    border: none;
+    cursor: pointer;
+
+}
+
+.send-btn:hover {
+    background-color: #ebd2f5;
+}
+
+
+.line {
+    width: 100%;
+    height: 2px;background-color: #333;
+}
+
+/* End */
+.end {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.end_title {
+    margin-top: 32px;
+    font-size: 2rem;
+    font-family: Hugh;
+    font-weight: 100;
+}
+
+.author {
+    margin-top: 32px;
+    font-size: 1rem;
+}
+
+
+.intro {
+    background-color: #333;
+    color: #dd87fc;
+    border-radius: 4px;
+    width: 200px;
+    height:50px;
+    position: fixed;
+    bottom: 80px;
+    left: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    .img {
+        width: 100%;
+        
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+   
+}

@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family:Hugh ;
+    src: url('../asset/font/hugh-is-life-font/HughIsLifePersonalUseItalic-K7axe.ttf');
+  }
+
+  @font-face {
+    font-family:Domain ;
+    src: url('../asset/font/TUV-Domaine-Regular.ttf');
+  }
+
+  html ::-webkit-scrollbar {
+    border-radius: 0px;
+    width: 8px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+html ::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.wrapper {
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ebd2f5;
+    min-height:100vh;
+
+
+}
+
+.title {
+    margin-top: 24px;
+    font-family: Domain;
+}
+
+.content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    width: 100%;
+
+}
+
+.wish {
+    margin-right: 12px;
+    margin-bottom: 12px;
+    padding: 12px;
+    width: 300px;
+    min-height: 100px;
+    text-align: center;
+    border: 1px solid #dd87fc;
+    border-radius: 4px;
+    overflow: auto;
+    
+    
+}
+
+.name {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.text {
+    font-family: Domain;
+    margin-top: 8px;
+    min-height: 100px;
+    /* height: 100%; */
+
+}
+
+.arrive {
+    margin-top: 12px;
+    text-align: start;
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+.link {
+    margin-top: 24px;
+    color: #333;
+}
+
