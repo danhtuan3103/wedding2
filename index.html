@@ -270,21 +270,41 @@
                 </span>
         </a>
       
+        <div data-aos="fade-zoom-in" data-aos-duration="3000" class="notification">
+            <p class="notification_text">
+                Để có trải nghiệm tốt nhất bạn hãy bật nhạc ở nút dưới cùng bên trái và vuốt xuống thật chậm
+            </p>
+
+            <div class="notification_btn">
+                <button class="notification_btn_cancle" >Cancel</button>
+                <button class="notification_btn_allow" >Allow</button>
+            </div>
+         </div>
     </div>  
     
     </div>  
     <script>
 
         AOS.init();
-    
+        
+          // Notifications
+        var notification = document.querySelector('.notification')
+        var cancle = document.querySelector('.notification_btn_cancle');
+        var allow = document.querySelector('.notification_btn_allow');
+
+        cancle.addEventListener('click', function () {
+            notification.style.display = 'none';
+        })
+
+        allow.addEventListener('click', function () {
+            notification.style.display = 'none';
+            togglePlay();
+        })  
+
         var audio = document.querySelector('audio');
         var btn = document.querySelector('.play-btn');
 
         var isPlaying = false;
-
-        window.onload = () => {
-            alert('Để có trải nghiệm tốt nhất bạn hãy bật nhạc ở nút dưới cùng bên trái và vuốt xuống thật chậm')
-        }
 
         function togglePlay() {
             if(isPlaying) { 
